@@ -127,6 +127,9 @@ class EnvMapper
     }
 
     /**
+     * @template T of object
+     * @param \ReflectionClass<T> $rClass
+     *
      * @return array<string, \ReflectionParameter>
      */
     protected function getConstructorArgs(\ReflectionClass $rClass): array
@@ -135,6 +138,9 @@ class EnvMapper
     }
 
     /**
+     * @template T of object
+     * @param \ReflectionClass<T> $rClass
+     *
      * @return array<string, \ReflectionParameter>
      */
     protected function makeConstructorArgs(\ReflectionClass $rClass): array
